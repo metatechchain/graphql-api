@@ -1,0 +1,14 @@
+# MtcBlockBurn represents a native MTC tokens burn record per created block.
+type MtcBlockBurn {
+    # blockNumber represents the number of the block.
+    blockNumber: Long!
+
+    # Timestamp is the unix timestamp at which this block was created.
+    timestamp: Long!
+
+    # amount represents the amount of MTC tokens burned in WEI units (18 digits fixed INT encoded as HEX number).
+    amount: BigInt!
+
+    # mtcValue represents MTC value of the burned MTC tokens.
+    mtcValue: Float!
+}
